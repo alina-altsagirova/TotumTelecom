@@ -1,0 +1,20 @@
+{
+	"BUILD_DIR" : "/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen",
+	"CMAKE_BINARY_DIR" : "/home/clair/Documents/qt/TotumTelecom/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/clair/Documents/qt/TotumTelecom/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/clair/Documents/qt/TotumTelecom",
+	"CMAKE_SOURCE_DIR" : "/home/clair/Documents/qt/TotumTelecom",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include",
+	"INPUTS" : [ "/home/clair/Documents/qt/TotumTelecom/SyNet.qss" ],
+	"LOCK_FILE" : "/home/clair/Documents/qt/TotumTelecom/build/CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/clair/Documents/qt/TotumTelecom/build/CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/clair/Documents/qt/TotumTelecom/resources.qrc",
+	"VERBOSITY" : 0
+}

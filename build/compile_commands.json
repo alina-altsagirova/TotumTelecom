@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/TotumTelecom_autogen/mocs_compilation.cpp.o -c /home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/mocs_compilation.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/TotumTelecom_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/main.cpp.o -c /home/clair/Documents/qt/TotumTelecom/main.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/main.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/main.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/database/dbmanager.cpp.o -c /home/clair/Documents/qt/TotumTelecom/database/dbmanager.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/database/dbmanager.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/database/dbmanager.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/ui/mainwindow.cpp.o -c /home/clair/Documents/qt/TotumTelecom/ui/mainwindow.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/ui/mainwindow.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/ui/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/ui/logindialog.cpp.o -c /home/clair/Documents/qt/TotumTelecom/ui/logindialog.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/ui/logindialog.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/ui/logindialog.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/widgets/dashboard.cpp.o -c /home/clair/Documents/qt/TotumTelecom/widgets/dashboard.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/widgets/dashboard.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/widgets/dashboard.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/widgets/reports.cpp.o -c /home/clair/Documents/qt/TotumTelecom/widgets/reports.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/widgets/reports.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/widgets/reports.cpp.o"
+},
+{
+  "directory": "/home/clair/Documents/qt/TotumTelecom/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -g -fPIC -o CMakeFiles/TotumTelecom.dir/TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "file": "/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "CMakeFiles/TotumTelecom.dir/TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+}
+]
