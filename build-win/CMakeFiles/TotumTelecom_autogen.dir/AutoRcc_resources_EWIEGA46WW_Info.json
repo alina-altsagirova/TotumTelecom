@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/src/build-win/TotumTelecom_autogen",
+	"CMAKE_BINARY_DIR" : "/src/build-win",
+	"CMAKE_CURRENT_BINARY_DIR" : "/src/build-win",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/src",
+	"CMAKE_SOURCE_DIR" : "/src",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/src/build-win/TotumTelecom_autogen/include",
+	"INPUTS" : [ "/src/SyNet.qss" ],
+	"LOCK_FILE" : "/src/build-win/CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/src/build-win/CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/src/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

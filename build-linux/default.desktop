@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TotumTelecom
+Exec=TotumTelecom
+Icon=utilities-terminal
+Categories=Office;Database;Utility;
+X-AppImage-Version=1.0

@@ -1,0 +1,32 @@
+#include <QApplication>
+#include "database/dbmanager.h"
+#include "ui/logindialog.h"
+#include "ui/mainwindow.h"
+
+int main(int argc, char *argv[]) {
+    QApplication a(argc, argv);
+      QFile f(":/SyNet.qss"); 
+    
+    if (!f.exists()) {
+        printf("Не удалось найти файл стилей\n");
+    } else {
+        f.open(QFile::ReadOnly | QFile::Text);
+        QTextStream ts(&f);
+        a.setStyleSheet(ts.readAll());
+    }
+
+
+    // 1. Инициализируем БД
+    DbManager db("totum_data.db");
+
+    // 2. Показываем окно входа
+    LoginDialog login;
+    if (login.exec() == QDialog::Accepted) {
+        // 3. Если логин успешен, открываем главное окно с правами доступа
+        MainWindow w(login.getUserRole()); 
+        w.showMaximized();
+        return a.exec();
+    }
+
+    return 0;
+}

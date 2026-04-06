@@ -1,0 +1,5 @@
+/src/build-win/CMakeFiles/TotumTelecom.dir
+/src/build-win/CMakeFiles/edit_cache.dir
+/src/build-win/CMakeFiles/rebuild_cache.dir
+/src/build-win/CMakeFiles/TotumTelecom_autogen_timestamp_deps.dir
+/src/build-win/CMakeFiles/TotumTelecom_autogen.dir
