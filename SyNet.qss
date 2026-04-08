@@ -239,7 +239,7 @@ QTableView
     color: #f0f0f0;
     gridline-color: gray;
     outline: 1;
-
+	alternate-background-color: #353535;
 }
 
 

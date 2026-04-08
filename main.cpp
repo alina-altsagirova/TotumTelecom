@@ -15,14 +15,11 @@ int main(int argc, char *argv[]) {
         a.setStyleSheet(ts.readAll());
     }
 
-
-    // 1. Инициализируем БД
     DbManager db("totum_data.db");
 
-    // 2. Показываем окно входа
+
     LoginDialog login;
     if (login.exec() == QDialog::Accepted) {
-        // 3. Если логин успешен, открываем главное окно с правами доступа
         MainWindow w(login.getUserRole()); 
         w.showMaximized();
         return a.exec();
