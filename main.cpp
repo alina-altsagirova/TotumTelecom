@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-      QFile f(":/SyNet.qss"); 
+      QFile f(":/Style.qss"); 
     
     if (!f.exists()) {
         printf("Не удалось найти файл стилей\n");

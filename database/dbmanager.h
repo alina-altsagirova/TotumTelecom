@@ -17,6 +17,7 @@ public:
     
     void createDefaultAdmin();
     void fillData();
+    void DropTables();
 
 private:
     QSqlDatabase m_db;
