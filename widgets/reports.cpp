@@ -50,8 +50,8 @@ void MainWindow::showClientDeviceReport()
 
     while (query.next())
     {
-        categories << query.value(0).toString(); // Имя компании
-        *set << query.value(1).toInt();          // Кол-во устройств
+        categories << query.value(0).toString(); 
+        *set << query.value(1).toInt();         
     }
 
     QBarSeries *series = new QBarSeries();
@@ -62,19 +62,16 @@ void MainWindow::showClientDeviceReport()
     chart->setTitle("Оборудование по клиентам");
     chart->setAnimationOptions(QChart::SeriesAnimations);
 
-    // Настройка оси X (названия компаний)
     QBarCategoryAxis *axisX = new QBarCategoryAxis();
     axisX->append(categories);
     chart->addAxis(axisX, Qt::AlignBottom);
     series->attachAxis(axisX);
 
-    // Настройка оси Y (числа)
     QValueAxis *axisY = new QValueAxis();
     axisY->setLabelFormat("%d");
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
 
-    // Отображение
     QChartView *chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
