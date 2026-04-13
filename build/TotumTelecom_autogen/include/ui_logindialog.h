@@ -62,7 +62,7 @@ public:
 
     void retranslateUi(QDialog *LoginDialog)
     {
-        LoginDialog->setWindowTitle(QCoreApplication::translate("LoginDialog", "Dialog", nullptr));
+        LoginDialog->setWindowTitle(QCoreApplication::translate("LoginDialog", "Login", nullptr));
         loginLineEdit->setPlaceholderText(QCoreApplication::translate("LoginDialog", "\320\233\320\276\320\263\320\270\320\275", nullptr));
         passwordLineEdit->setPlaceholderText(QCoreApplication::translate("LoginDialog", "\320\237\320\260\321\200\320\276\320\273\321\214", nullptr));
         loginButton->setText(QCoreApplication::translate("LoginDialog", "\320\222\320\276\320\271\321\202\320\270", nullptr));

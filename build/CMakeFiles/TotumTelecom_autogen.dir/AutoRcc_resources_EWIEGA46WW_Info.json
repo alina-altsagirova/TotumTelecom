@@ -6,7 +6,7 @@
 	"CMAKE_SOURCE_DIR" : "/home/clair/Documents/qt/TotumTelecom",
 	"GENERATOR" : "Unix Makefiles",
 	"INCLUDE_DIR" : "/home/clair/Documents/qt/TotumTelecom/build/TotumTelecom_autogen/include",
-	"INPUTS" : [ "/home/clair/Documents/qt/TotumTelecom/SyNet.qss" ],
+	"INPUTS" : [ "/home/clair/Documents/qt/TotumTelecom/Style.qss" ],
 	"LOCK_FILE" : "/home/clair/Documents/qt/TotumTelecom/build/CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
 	"OPTIONS" : [ "-name", "resources" ],

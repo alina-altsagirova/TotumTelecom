@@ -78,7 +78,7 @@ TotumTelecom_autogen/timestamp: CMakeFiles/TotumTelecom.dir/compiler_depend.ts
 
 TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp: /home/clair/Documents/qt/TotumTelecom/resources.qrc
 TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
-TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp: /home/clair/Documents/qt/TotumTelecom/SyNet.qss
+TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp: /home/clair/Documents/qt/TotumTelecom/Style.qss
 TotumTelecom_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/clair/Documents/qt/TotumTelecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
 	/usr/bin/cmake -E cmake_autorcc /home/clair/Documents/qt/TotumTelecom/build/CMakeFiles/TotumTelecom_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug

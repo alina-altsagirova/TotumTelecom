@@ -1,5 +1,0 @@
-/home/clair/Documents/qt/TotumTelecom/build/Desktop-Debug/CMakeFiles/TotumTelecom.dir
-/home/clair/Documents/qt/TotumTelecom/build/Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/clair/Documents/qt/TotumTelecom/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/clair/Documents/qt/TotumTelecom/build/Desktop-Debug/CMakeFiles/TotumTelecom_autogen_timestamp_deps.dir
-/home/clair/Documents/qt/TotumTelecom/build/Desktop-Debug/CMakeFiles/TotumTelecom_autogen.dir
