@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 
-
 MainWindow::MainWindow(int userRole, QWidget *parent) : QMainWindow(parent),
                                                         ui(new Ui::MainWindow)
 {
@@ -11,10 +10,6 @@ MainWindow::MainWindow(int userRole, QWidget *parent) : QMainWindow(parent),
     ui->tabWidget->setTabText(2, "⚙️ Администрирование");
     ui->tabWidget->setTabText(3, "🎫 Заявки");
 
-    if (userRole == 0)
-    {
-        ui->tab_Admin->hide();
-    }
     setupDashboard(userRole);
     ui->tabWidget->setCurrentIndex(0);
 
@@ -32,13 +27,35 @@ MainWindow::MainWindow(int userRole, QWidget *parent) : QMainWindow(parent),
             break;
         } });
 
-          for (auto table : this->findChildren<QTableView*>()) {
+    for (auto table : this->findChildren<QTableView *>())
+    {
         table->setAlternatingRowColors(true);
     }
-   
 
     connect(ui->btnClientReport, &QPushButton::clicked, this, &MainWindow::showClientDeviceReport);
     connect(ui->btnStatusReport, &QPushButton::clicked, this, &MainWindow::showStatusReport);
+
+    if (userRole == 1)
+    {
+        ui->btnAddDevice->hide();
+        ui->btnDelDevice->hide();
+        ui->btnAddModel->hide();
+        ui->btnDelModel->hide();
+        ui->btnAddTicket->hide();
+        ui->btnDelTicket->hide();
+        ui->tableTickets->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        ui->tableModels->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        ui->tableMonitoring->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    }
+    else if (userRole == 0)
+    {
+        ui->btnAddUser->hide();
+        ui->btnDelUser->hide();
+        ui->btnAddClient->hide();
+        ui->btnDelClient->hide();
+        ui->tableClients->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        ui->tableUsers->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    }
 
     // ADD && DEL btns
     connect(ui->btnAddTicket, &QPushButton::clicked, this, [this]()
@@ -77,20 +94,22 @@ void MainWindow::setupMonitoringTable()
     model->setHeaderData(4, Qt::Horizontal, "Компания");
     model->setHeaderData(5, Qt::Horizontal, "Статус");
 
-    model->setEditStrategy(QSqlTableModel::OnManualSubmit);
+    model->setEditStrategy(QSqlTableModel::OnFieldChange);
     model->select();
     ui->tableMonitoring->setModel(model);
     ui->tableMonitoring->hideColumn(0);
     ui->tableMonitoring->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
-     ui->tableMonitoring->setItemDelegate(new QSqlRelationalDelegate(ui->tableMonitoring));
+    ui->tableMonitoring->setItemDelegate(new QSqlRelationalDelegate(ui->tableMonitoring));
 }
 
 void MainWindow::setupTicketsTable()
 {
-    if (ui->tableTickets->model()) {
+    if (ui->tableTickets->model())
+    {
         auto *oldModel = qobject_cast<QSqlRelationalTableModel *>(ui->tableTickets->model());
-        if (oldModel) oldModel->select();
+        if (oldModel)
+            oldModel->select();
         return;
     }
 
@@ -105,19 +124,18 @@ void MainWindow::setupTicketsTable()
     model->setHeaderData(3, Qt::Horizontal, "📝 Описание");
     model->setHeaderData(4, Qt::Horizontal, "📅 Дата");
 
-    model->setEditStrategy(QSqlRelationalTableModel::OnFieldChange); 
+    model->setEditStrategy(QSqlRelationalTableModel::OnFieldChange);
     model->select();
 
     ui->tableTickets->setModel(model);
-    
+
     ui->tableTickets->setItemDelegate(new QSqlRelationalDelegate(ui->tableTickets));
     ui->tableTickets->hideColumn(0);
 
     auto *header = ui->tableTickets->horizontalHeader();
-    header->setSectionResizeMode(QHeaderView::ResizeToContents); 
-    header->setSectionResizeMode(3, QHeaderView::Stretch);     
+    header->setSectionResizeMode(QHeaderView::ResizeToContents);
+    header->setSectionResizeMode(3, QHeaderView::Stretch);
 }
-
 
 void MainWindow::setupClientsTable()
 {
@@ -172,18 +190,29 @@ void MainWindow::on_AddClicked(QTableView *table)
     {
         if (model->tableName() == "tickets")
         {
-            model->setData(model->index(row, 1), 1); 
+            model->setData(model->index(row, 1), 1);
             model->setData(model->index(row, 2), 1);
             model->setData(model->index(row, 3), "Описание");
             model->setData(model->index(row, 4), QDate::currentDate());
         }
-        if (model->tableName() == "devices") {
-             model->setData(model->index(row, 1), "Название");
+        if (model->tableName() == "devices")
+        {
+            model->setData(model->index(row, 1), "Название");
             model->setData(model->index(row, 3), 1);
             model->setData(model->index(row, 4), 1);
         }
         table->setCurrentIndex(model->index(row, 1));
         table->edit(model->index(row, 1));
+        if (!model->submitAll())
+        {
+            qDebug() << "Ошибка сохранения:" << model->lastError().text();
+        }
+        else
+        {
+            model->select();
+            table->setCurrentIndex(model->index(row, 1));
+            table->edit(model->index(row, 1));
+        }
     }
 }
 
@@ -198,8 +227,6 @@ void MainWindow::on_DelClicked(QTableView *table)
         model->select();
     }
 }
-
-
 
 MainWindow::~MainWindow()
 {
